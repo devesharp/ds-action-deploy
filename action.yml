@@ -1,0 +1,15 @@
+# action.yml
+name: 'Devesharp Action Deploy'
+description: '--'
+branding:
+  icon: 'deploy'  
+  color: 'green'
+inputs:
+  URL: 
+    description: '--'
+    required: false
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs }}
