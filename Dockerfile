@@ -6,7 +6,7 @@ ADD entrypoint.sh package.json index.js yarn.lock /app/
 
 RUN apt-get update
 RUN apt-get -y install curl dirmngr apt-transport-https lsb-release ca-certificates
-RUN curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+RUN curl -sL https://deb.nodesource.com/setup_12.x | -E bash -
 
 RUN apt-get update && apt-get install -y \
     sudo \
