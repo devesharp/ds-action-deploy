@@ -13,6 +13,7 @@ RUN apt-get update && apt-get install -y \
     sshpass \
     openssh-client
 
+WORKDIR /app/ 
 RUN chmod +x /app/entrypoint.sh
 
 RUN npm install
