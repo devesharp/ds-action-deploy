@@ -1,0 +1,12 @@
+{
+  "name": "ds-action-deploy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/devesharp/ds-action-deploy.git",
+  "author": "Alberto Ammar <albertoammarw@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "@actions/github": "^4.0.0"
+  }
+}
