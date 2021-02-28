@@ -1,7 +1,9 @@
 const core = require('@actions/core');
 const github = require('@actions/github');
+const childProcess = require('child_process');
 
 try {
+  childProcess.execSync('')
   // `who-to-greet` input defined in action metadata file
   const nameToGreet = core.getInput('who-to-greet');
   console.log(`Hello ${nameToGreet}!`);
