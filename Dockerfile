@@ -2,10 +2,12 @@
 FROM ubuntu:18.04
 
 # Copia o arquivo de código do repositório de ação para o caminho do sistema de arquivos `/` do contêiner
-COPY entrypoint.sh /entrypoint.sh
+ADD entrypoint.sh package.json index.js yarn.lock /app/
 
 RUN apt-get update && apt-get install -y \
     sudo \
+    nodejs \
+    npm \
     unzip \
     zip \
     sshpass \
@@ -13,5 +15,7 @@ RUN apt-get update && apt-get install -y \
 
 RUN chmod +x entrypoint.sh
 
+RUN npm install
+
 # Arquivo de código a ser executado quando o contêiner do docker é iniciado (`entrypoint.sh`)
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["/app/entrypoint.sh"]

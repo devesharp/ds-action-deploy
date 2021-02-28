@@ -111,10 +111,27 @@
   dependencies:
     "@octokit/openapi-types" "^5.2.0"
 
+"@types/camelcase@5.2.0":
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/@types/camelcase/-/camelcase-5.2.0.tgz#5c139f8618a126827129587cce9ee904f9a79863"
+  integrity sha512-zhHaryYYUUsJ1h6Rq4hisPkljY7c2bkC5PFYQbom5fyKloGJEDK+wdsw2L4hnBwXr4plGjW6D/UVJBbNbOzVpQ==
+  dependencies:
+    camelcase "*"
+
 before-after-hook@^2.1.0:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/before-after-hook/-/before-after-hook-2.1.1.tgz#99ae36992b5cfab4a83f6bee74ab27835f28f405"
   integrity sha512-5ekuQOvO04MDj7kYZJaMab2S8SPjGJbotVNyv7QYFCOAwrGZs/YnoDNlh1U+m5hl7H2D/+n0taaAV/tfyd3KMA==
+
+camelcase@*:
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-6.2.0.tgz#924af881c9d525ac9d87f40d964e5cea982a1809"
+  integrity sha512-c7wVvbw3f37nuobQNtgsgG9POC9qMbNuMQmTCqZv23b6MIz0fcYpBiOlv9gEN/hdLdnZTDQhg6e9Dq5M1vKvfg==
+
+camelcase@5.3.1:
+  version "5.3.1"
+  resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-5.3.1.tgz#e3c9b31569e106811df242f715725a1f4c494320"
+  integrity sha512-L28STB170nwWS63UjtlEOE3dldQApaJXZkOI1uMFfzf3rRuPegHaHesyee+YxQ+W6SvRDQV6UrdOdRiR153wJg==
 
 child_process@^1.0.2:
   version "1.0.2"
@@ -142,6 +159,14 @@ once@^1.4.0:
   integrity sha1-WDsap3WWHUsROsF9nFC6753Xa9E=
   dependencies:
     wrappy "1"
+
+read-env@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/read-env/-/read-env-2.0.0.tgz#6fe19783a112ce873b932ad0be607859e27a0510"
+  integrity sha512-gCuo85JH2aWt23HVeFzUUhpLzCRtc9O0jjvpMDG/3vue2aOp7/XllAQjSyL8xGqBifGNYbnWLE0PAqi4AWMBlA==
+  dependencies:
+    "@types/camelcase" "5.2.0"
+    camelcase "5.3.1"
 
 tunnel@0.0.6:
   version "0.0.6"

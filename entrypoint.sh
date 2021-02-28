@@ -1,5 +1,8 @@
 #!/bin/sh -l
 
+sh -c "node ./index.js $*"
+
 ls ./.ds
-zip ./.ds deploy-ds.zip
+zip -r deploy-ds.zip ./.ds
+
 echo "$5"
