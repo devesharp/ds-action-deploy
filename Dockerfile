@@ -13,10 +13,11 @@ RUN apt-get update && apt-get install -y \
     sshpass \
     openssh-client
 
+RUN npm install --global yarn
 WORKDIR /app/ 
 RUN chmod +x /app/entrypoint.sh
 
-RUN npm install
+RUN yarn
 
 # Arquivo de código a ser executado quando o contêiner do docker é iniciado (`entrypoint.sh`)
 ENTRYPOINT ["/app/entrypoint.sh"]
