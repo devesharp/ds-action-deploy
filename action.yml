@@ -5,8 +5,13 @@ branding:
   icon: 'deploy'  
   color: 'green'
 inputs:
-  URL: 
-    description: '--'
+  HOST:
+    required: true
+  PASSWORD:
+    required: true
+  PROJECT_DIR:
+    required: true
+  ENVIROMENTS:
     required: false
 runs:
   using: 'node12'
