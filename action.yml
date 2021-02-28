@@ -5,19 +5,6 @@ branding:
   icon: 'deploy'  
   color: 'green'
 inputs:
-<<<<<<< HEAD
-  HOST:
-    required: true
-  PASSWORD:
-    required: true
-  PROJECT_DIR:
-    required: true
-  ENVIROMENTS:
-    required: false
-runs:
-  using: 'node12'
-  main: 'index.js'
-=======
   DS_HOST:
     required: true
   DS_PASSWORD:
@@ -37,4 +24,3 @@ runs:
     - ${{ inputs.DS_ROOT }}
     - ${{ inputs.DS_PROJECT_DIR }}
     - ${{ inputs.DS_ENVIROMENTS }}
->>>>>>> c7b22096
