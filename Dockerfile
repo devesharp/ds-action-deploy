@@ -11,7 +11,6 @@ RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
 RUN apt-get update && apt-get install -y \
     sudo \
     nodejs \
-    npm \
     unzip \
     zip \
     sshpass \
