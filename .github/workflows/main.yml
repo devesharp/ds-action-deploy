@@ -14,5 +14,7 @@ jobs:
                DS_HOST: ${{ secrets.DS_HOST }}
                DS_USER: ${{ secrets.DS_USER }}
                DS_PASSWORD: ${{ secrets.DS_PASSWORD }}
-               PROJECT_DIR: '/root/projects/ds-action-deploy'
-               ENVIROMENTS: 'VAR1=sdsd'
+               DS_PROJECT_DIR: '/root/projects/ds-action-deploy'
+               DS_ENVIROMENTS:  >
+                  VAR1=sdsd
+                  VAR2=sdsd
