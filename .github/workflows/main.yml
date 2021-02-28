@@ -1,7 +1,7 @@
 name: Test Unit
 
 on: [push]
-    
+
 jobs:
    test:
       runs-on: ubuntu-latest
@@ -15,6 +15,6 @@ jobs:
                DS_USER: ${{ secrets.DS_USER }}
                DS_PASSWORD: ${{ secrets.DS_PASSWORD }}
                PROJECT_DIR: '/root/projects/ds-action-deploy'
-               ENVIROMENTS:
-                  VAR1: 'sdsd'
-                  VAR2: 'sdsd'
+               ENVIROMENTS: -
+                  `SD1S56D=156
+                  SDSDSD=1565`
