@@ -20,7 +20,5 @@ RUN npm install --global yarn
 WORKDIR /app/ 
 RUN chmod +x /app/entrypoint.sh
 
-RUN yarn
-
 # Arquivo de código a ser executado quando o contêiner do docker é iniciado (`entrypoint.sh`)
 ENTRYPOINT ["/app/entrypoint.sh"]

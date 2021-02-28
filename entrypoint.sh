@@ -1,5 +1,7 @@
 #!/bin/sh -l
 
+yarn
+
 sh -c "node ./index.js $*"
 
 # ls ./.ds
