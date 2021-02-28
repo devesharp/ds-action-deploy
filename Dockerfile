@@ -9,7 +9,6 @@ RUN apt-get update && apt-get install -y \
     nodejs \
     npm \
     unzip \
-    yarn \
     zip \
     sshpass \
     openssh-client
@@ -17,7 +16,7 @@ RUN apt-get update && apt-get install -y \
 WORKDIR /app/ 
 RUN chmod +x /app/entrypoint.sh
 
-RUN yarn
+RUN npm install
 
 # Arquivo de código a ser executado quando o contêiner do docker é iniciado (`entrypoint.sh`)
 ENTRYPOINT ["/app/entrypoint.sh"]
