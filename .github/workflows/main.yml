@@ -15,6 +15,6 @@ jobs:
                DS_USER: ${{ secrets.DS_USER }}
                DS_PASSWORD: ${{ secrets.DS_PASSWORD }}
                PROJECT_DIR: '/root/projects/ds-action-deploy'
-               ENVIROMENTS: -
-                  `SD1S56D=156
-                  SDSDSD=1565`
+               ENVIROMENTS: >
+                  VAR1=sdsd
+                  VAR2=sdsd
