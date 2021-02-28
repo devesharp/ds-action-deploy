@@ -9,6 +9,7 @@
     "@actions/core": "^1.2.6",
     "@actions/github": "^4.0.0",
     "child_process": "^1.0.2",
+    "parse-env-string": "^1.0.0",
     "read-env": "^2.0.0"
   }
 }
