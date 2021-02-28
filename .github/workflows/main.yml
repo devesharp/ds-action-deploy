@@ -9,7 +9,7 @@ jobs:
       steps:
          -  uses: actions/checkout@v1
 
-         -  uses: devesharp/ds-action-notify@master
+         -  uses: devesharp/ds-action-deploy@master
             with:
                DS_HOST: ${{ secrets.DS_HOST }}
                DS_USER: ${{ secrets.DS_USER }}

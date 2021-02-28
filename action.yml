@@ -9,10 +9,12 @@ inputs:
     required: true
   DS_PASSWORD:
     required: true
+  DS_USER:
+    required: true
   DS_PROJECT_DIR:
-    required: true
+    required: false
   DS_ENVIROMENTS:
-    required: true
+    required: false
 runs:
   using: 'docker'
   image: 'Dockerfile'
