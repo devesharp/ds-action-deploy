@@ -4,8 +4,8 @@ FROM ubuntu:18.04
 # Copia o arquivo de código do repositório de ação para o caminho do sistema de arquivos `/` do contêiner
 ADD entrypoint.sh package.json index.js yarn.lock /app/
 
-RUN sudo apt update
-RUN sudo apt -y install curl dirmngr apt-transport-https lsb-release ca-certificates
+RUN apt-get update
+RUN apt-get -y install curl dirmngr apt-transport-https lsb-release ca-certificates
 RUN curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 
 RUN apt-get update && apt-get install -y \
