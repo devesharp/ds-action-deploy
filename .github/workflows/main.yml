@@ -9,7 +9,7 @@ jobs:
       steps:
          -  uses: actions/checkout@v1
 
-         -  uses: devesharp/ds-action-notify@master
+         -  uses: devesharp/ds-action-deploy@master
             with:
                MESSAGE: 'Action updated'
                URL: ${{ secrets.NOTIFY_URL }}
