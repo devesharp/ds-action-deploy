@@ -21,6 +21,6 @@ runs:
   args:
     - ${{ inputs.DS_HOST }}
     - ${{ inputs.DS_PASSWORD }}
-    - ${{ inputs.DS_ROOT }}
+    - ${{ inputs.DS_USER }}
     - ${{ inputs.DS_PROJECT_DIR }}
     - ${{ inputs.DS_ENVIROMENTS }}

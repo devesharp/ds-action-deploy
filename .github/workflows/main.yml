@@ -16,5 +16,4 @@ jobs:
                DS_PASSWORD: ${{ secrets.DS_PASSWORD }}
                DS_PROJECT_DIR: '/root/projects/ds-action-deploy'
                DS_ENVIROMENTS:  >
-                  VAR1=sdsd
-                  VAR2=sdsd
+                  IMAGE_NAME=hello-world
