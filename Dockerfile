@@ -1,10 +1,15 @@
 # Imagem de contêiner que executa seu código
-FROM alpine:3.10
+FROM ubuntu:18.04
 
 # Copia o arquivo de código do repositório de ação para o caminho do sistema de arquivos `/` do contêiner
 COPY entrypoint.sh /entrypoint.sh
 
-RUN apk --no-cache add curl
+RUN apt-get update && apt-get install -y \
+    sudo \
+    unzip \
+    zip \
+    sshpass \
+    openssh-client
 
 RUN chmod +x entrypoint.sh
 

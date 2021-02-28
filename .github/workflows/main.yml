@@ -11,6 +11,10 @@ jobs:
 
          -  uses: devesharp/ds-action-notify@master
             with:
-               MESSAGE: 'Action updated'
-               URL: ${{ secrets.NOTIFY_URL }}
-               TOKEN: ${{ secrets.NOTIFY_TOKEN }}
+               DS_HOST: ${{ secrets.DS_HOST }}
+               DS_USER: ${{ secrets.DS_USER }}
+               DS_PASSWORD: ${{ secrets.DS_PASSWORD }}
+               PROJECT_DIR: '/root/projects/ds-action-deploy'
+               ENVIROMENTS:
+                  VAR1: 'sdsd'
+                  VAR2: 'sdsd'

@@ -5,11 +5,20 @@ branding:
   icon: 'deploy'  
   color: 'green'
 inputs:
-  URL: 
-    description: '--'
-    required: false
+  DS_HOST:
+    required: true
+  DS_PASSWORD:
+    required: true
+  DS_PROJECT_DIR:
+    required: true
+  DS_ENVIROMENTS:
+    required: true
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs }}
+    - ${{ inputs.DS_HOST }}
+    - ${{ inputs.DS_PASSWORD }}
+    - ${{ inputs.DS_ROOT }}
+    - ${{ inputs.DS_PROJECT_DIR }}
+    - ${{ inputs.DS_ENVIROMENTS }}
